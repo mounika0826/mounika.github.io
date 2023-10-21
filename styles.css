@@ -19,17 +19,17 @@ nav {
     right: 20px;
     display: none;
     padding: 15px;
-    background: linear-gradient(145deg, #f47373, #3c91e6); /* Gradient background */
+    background: black; /* Solid black background */
     border: none;
     cursor: pointer;
-    border-radius: 50%; /* Makes it a circle */
+    border-radius: 50%; /* Keeps it a circle */
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
     transition: transform 0.2s, opacity 0.3s; /* Smooth hover transition */
 }
 
 .scroll-top-btn:hover {
     opacity: 0.9;
-    transform: scale(1.05); /* Slightly scale up on hover */
+    transform: scale(1.05); 
 }
 
 .arrow-up {
@@ -37,28 +37,34 @@ nav {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid white; /* Arrow color */
+    border-bottom: 15px solid white;
     margin: auto;
 }
-
-
 
 #container{
     font-family: Inter, sans-serif;
 }
 .navItem {
-
     color: #3A3A3A;
     font-size: 15px;
     font-family: Inter, sans-serif;
     font-weight: 600;
     margin-right: 30px; 
     text-decoration: none; 
+    padding: 8px 12px; 
+    border-radius: 6px; 
+    transition: all 0.3s; 
 }
 
 .navItem.active {
     color: black;
+    font-weight: 900; /* Increased font weight */
+    background-color: #D0D0D0; /* Slightly darker background */
+    border: 2px solid #3A3A3A; /* Thicker border */
+    font-size: 17px; /* Increased font size */
 }
+
+
 
 .navItem:hover {
     color: [HoverColor]; 
@@ -95,17 +101,18 @@ nav {
 #resumeButton {
     width: 150px;
     height: 45px;
-    left: 586px;
+    left: 55%;
     bottom: 40px;
     position: absolute;
     background: #3A3A3A;
+    align-self: center;
     border-radius: 30px;
     text-align: center;
     line-height: 48px;
     color: white;
     font-size: 14px;
     font-family: Inter, sans-serif;
-    font-weight: 500;
+    font-weight: 800;
 }
 .header img, .header h1, .header h2 {
     vertical-align: middle; 
